@@ -19,3 +19,32 @@ npm install
 
 # Start the dev server
 npm run dev
+
+
+---------------------------------
+ Steps to make it work on a new system:
+
+# 1. Clone the repo
+git clone https://github.com/nagasai-dev-tech/seo-automation-tool.git
+cd seo-automation-tool
+
+# 2. Setup Backend
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+# 3. Create .env file manually
+# Create backend/.env and paste:
+# RANK_PROVIDER=serpapi
+# SERPAPI_KEY=30843ecc0e2bae427910f25beb9b90c5f9112310a73bd20d3a71cffbf5689011
+# JWT_SECRET=super-secret-avention-seo-key-change-in-production-2026
+
+# 4. Start backend
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+# 5. Setup Frontend (new terminal)
+cd frontend
+npm install
+npm run dev
+
