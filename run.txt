@@ -1,0 +1,21 @@
+# Navigate to project root
+cd d:\seo-automation-tool
+
+# Activate virtual environment
+.\venv\Scripts\Activate
+
+# Navigate to backend folder
+cd backend
+
+# Run the FastAPI server
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+----------------------------------------------------------------
+
+# Navigate to frontend folder
+cd d:\seo-automation-tool\frontend
+
+# Install dependencies (only first time)
+npm install
+
+# Start the dev server
+npm run dev

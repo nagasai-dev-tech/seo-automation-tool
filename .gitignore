@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Environment Variables (SENSITIVE - do NOT push)
+.env
+.env.local
+.env.production
+backend/.env
+
+# Database (SQLite - local dev data)
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads (user files)
+uploads/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+node_modules/
+
+# Pytest
+.pytest_cache/
+.pytest_ini
+htmlcov/
+.coverage
+*.cover
+
+# Logs
+*.log
+logs/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+docker-compose.override.yml
+
+# Alembic
+# Keep alembic.ini and migrations folder (needed for DB migrations)
+
+# Scratch files (agent generated)
+setup_targetnxt.py
+import_all_targetnxt_pages.py
